@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    tools:context="jimjam.timetableapp.MainActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:name="layout.FragmentTop"
+        android:id="@+id/fragment1"
+        tools:layout="@layout/fragment_fragment_top" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:name="jimjam.timetableapp.DayMain"
+        android:layout_weight="1"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:layout_gravity="center"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        app:srcCompat="@drawable/download"
+        android:id="@+id/imageView2"
+        android:contentDescription="@string/logo_desc"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@android:color/background_light" />
+
+</LinearLayout>
