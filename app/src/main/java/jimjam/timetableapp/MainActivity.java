@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         vp.setAdapter(myPagerAdapter);
     }
 
+    //David wrote this
+
     /*
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
