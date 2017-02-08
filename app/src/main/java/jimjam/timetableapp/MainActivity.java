@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         vp = (ViewPager) findViewById(R.id.viewpager);
         vp.setClipToPadding(false);
         addPages(vp);
-
+        
         /*tab = (TabLayout) findViewById(R.id.tabs);
         tab.setTabGravity(TabLayout.GRAVITY_FILL);
         tab.setupWithViewPager(vp);
